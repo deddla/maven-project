@@ -9,7 +9,7 @@ pipeline {
     stages{
         stage('Build'){
             steps {
-				 cmd "mvn clean package"
+				 powershell "mvn clean package"
             }
             post {
                 success {
