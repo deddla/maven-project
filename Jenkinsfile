@@ -6,5 +6,6 @@ node {
         } else {
             echo 'I execute elsewhere'
         }
+		checkout scm
     }
 }
