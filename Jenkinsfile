@@ -1,5 +1,9 @@
 node {
-	stage('Build') {
-		bat 'set PATH=%PATH%;C:\\Users\\sdeddla\\applications\\apache\\maven\\apache-maven-3.6.3\\bin && C:\\Users\\sdeddla\\applications\\apache\\maven\\apache-maven-3.6.3\\bin\\mvn clean package'
-	}
+    stage('Example') {
+        if (env.BRANCH_NAME == 'master') {
+            echo 'I only execute on the master branch'
+        } else {
+            echo 'I execute elsewhere'
+        }
+    }
 }
