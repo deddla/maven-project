@@ -1,8 +1,6 @@
 apiVersion = "v1"
+runDeployStage = true
+
 node {
-	stage('Build') {
-		echo env.PATH
-		echo apiVersion
-		bat 'mvn clean package'
-	}
+	checkout scm
 }
