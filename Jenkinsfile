@@ -2,5 +2,5 @@ apiVersion = "v1"
 runDeployStage = true
 
 node {
-	checkout($class: 'GitSCM' , branches: [[name: 'develop']])
+	checkout($class: 'GitSCM' , branches: [[name: 'master']])
 }
